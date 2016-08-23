@@ -1,7 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.safestring import mark_safe
-from tinymce.models import HTMLField
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 
 class Article(models.Model):
     def image_tag(self):
@@ -10,7 +11,7 @@ class Article(models.Model):
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='article/', default='article/default.png')
     image_tag.short_description = 'Image'
-    content = HTMLField()
+    content = RichTextUploadingField()
     author = models.ForeignKey(User)
     status_draft = 'draft'
     status_public = 'public'
@@ -39,13 +40,13 @@ class Notification(models.Model):
     modified = models.DateTimeField(auto_now=True)
 
 class Help(models.Model):
-    description_ios = HTMLField()
-    description_android = HTMLField()
+    description_ios = RichTextField()
+    description_android = RichTextField()
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
 class TermsOfService(models.Model):
-    description_ios = HTMLField()
-    description_android = HTMLField()
+    description_ios = RichTextField()
+    description_android = RichTextField()
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
