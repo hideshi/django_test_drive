@@ -56,7 +56,13 @@ class Notification(models.Model):
 
     title = models.CharField(_('Title'), max_length=60)
     message = models.CharField(_('Message'), max_length=255)
-    status = models.CharField(_('Status'), default='not_sent', max_length=10, editable=False)
+    not_sent = 'Not sent'
+    sent = 'Sent'
+    sent_status = (
+        (not_sent, _('Not sent')),
+        (sent, _('Sent')),
+    )
+    status = models.CharField(_('Status'), choices=sent_status, default=not_sent, max_length=10, editable=False)
     open_date = models.DateTimeField(_('Open date') )
     created = models.DateTimeField(_('Created'), auto_now_add=True)
     modified = models.DateTimeField(_('Modified'), auto_now=True)

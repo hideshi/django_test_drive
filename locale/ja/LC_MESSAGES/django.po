@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 19:10+0800\n"
+"POT-Creation-Date: 2016-08-27 19:46+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: django_test_drive/settings.py:163
+#: django_test_drive/settings.py:161
 msgid "English"
 msgstr "英語"
 
-#: django_test_drive/settings.py:164
+#: django_test_drive/settings.py:162
 msgid "Japanese"
 msgstr "日本語"
 
@@ -38,13 +38,13 @@ msgstr "カテゴリ"
 msgid "Name"
 msgstr "名称"
 
-#: newsapp/models.py:17 newsapp/models.py:49 newsapp/models.py:61
-#: newsapp/models.py:71 newsapp/models.py:81
+#: newsapp/models.py:17 newsapp/models.py:49 newsapp/models.py:67
+#: newsapp/models.py:77 newsapp/models.py:87
 msgid "Created"
 msgstr "登録日"
 
-#: newsapp/models.py:18 newsapp/models.py:50 newsapp/models.py:62
-#: newsapp/models.py:72 newsapp/models.py:82
+#: newsapp/models.py:18 newsapp/models.py:50 newsapp/models.py:68
+#: newsapp/models.py:78 newsapp/models.py:88
 msgid "Modified"
 msgstr "更新日"
 
@@ -60,7 +60,7 @@ msgstr "記事"
 msgid "Title"
 msgstr "タイトル"
 
-#: newsapp/models.py:29
+#: newsapp/models.py:29 newsapp/models.py:30
 msgid "Image"
 msgstr "画像"
 
@@ -80,11 +80,11 @@ msgstr "下書き"
 msgid "Public"
 msgstr "公開"
 
-#: newsapp/models.py:40 newsapp/models.py:59
+#: newsapp/models.py:40 newsapp/models.py:65
 msgid "Status"
 msgstr "ステータス"
 
-#: newsapp/models.py:41 newsapp/models.py:60
+#: newsapp/models.py:41 newsapp/models.py:66
 msgid "Open date"
 msgstr "公開日"
 
@@ -112,26 +112,34 @@ msgstr "通知"
 msgid "Message"
 msgstr "メッセージ"
 
-#: newsapp/models.py:66
+#: newsapp/models.py:62
+msgid "Not sent"
+msgstr "未送信"
+
+#: newsapp/models.py:63
+msgid "Sent"
+msgstr "送信済み"
+
+#: newsapp/models.py:72
 msgid "Help"
 msgstr "ヘルプ"
 
-#: newsapp/models.py:67
+#: newsapp/models.py:73
 msgid "Helps"
 msgstr "ヘルプ"
 
-#: newsapp/models.py:69 newsapp/models.py:79
+#: newsapp/models.py:75 newsapp/models.py:85
 msgid "Description iOS"
 msgstr "内容 iOS"
 
-#: newsapp/models.py:70 newsapp/models.py:80
+#: newsapp/models.py:76 newsapp/models.py:86
 msgid "Description Android"
 msgstr "内容 Android"
 
-#: newsapp/models.py:76
+#: newsapp/models.py:82
 msgid "Terms of Service"
 msgstr "利用規約"
 
-#: newsapp/models.py:77
+#: newsapp/models.py:83
 msgid "Terms of Services"
 msgstr "利用規約"

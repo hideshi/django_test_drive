@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 19:10+0800\n"
+"POT-Creation-Date: 2016-08-27 19:46+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: django_test_drive/settings.py:163
+#: django_test_drive/settings.py:161
 msgid "English"
 msgstr ""
 
-#: django_test_drive/settings.py:164
+#: django_test_drive/settings.py:162
 msgid "Japanese"
 msgstr ""
 
@@ -37,13 +37,13 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: newsapp/models.py:17 newsapp/models.py:49 newsapp/models.py:61
-#: newsapp/models.py:71 newsapp/models.py:81
+#: newsapp/models.py:17 newsapp/models.py:49 newsapp/models.py:67
+#: newsapp/models.py:77 newsapp/models.py:87
 msgid "Created"
 msgstr ""
 
-#: newsapp/models.py:18 newsapp/models.py:50 newsapp/models.py:62
-#: newsapp/models.py:72 newsapp/models.py:82
+#: newsapp/models.py:18 newsapp/models.py:50 newsapp/models.py:68
+#: newsapp/models.py:78 newsapp/models.py:88
 msgid "Modified"
 msgstr ""
 
@@ -59,7 +59,7 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: newsapp/models.py:29
+#: newsapp/models.py:29 newsapp/models.py:30
 msgid "Image"
 msgstr ""
 
@@ -79,11 +79,11 @@ msgstr ""
 msgid "Public"
 msgstr ""
 
-#: newsapp/models.py:40 newsapp/models.py:59
+#: newsapp/models.py:40 newsapp/models.py:65
 msgid "Status"
 msgstr ""
 
-#: newsapp/models.py:41 newsapp/models.py:60
+#: newsapp/models.py:41 newsapp/models.py:66
 msgid "Open date"
 msgstr ""
 
@@ -111,26 +111,34 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: newsapp/models.py:66
+#: newsapp/models.py:62
+msgid "Not sent"
+msgstr ""
+
+#: newsapp/models.py:63
+msgid "Sent"
+msgstr ""
+
+#: newsapp/models.py:72
 msgid "Help"
 msgstr ""
 
-#: newsapp/models.py:67
+#: newsapp/models.py:73
 msgid "Helps"
 msgstr ""
 
-#: newsapp/models.py:69 newsapp/models.py:79
+#: newsapp/models.py:75 newsapp/models.py:85
 msgid "Description iOS"
 msgstr ""
 
-#: newsapp/models.py:70 newsapp/models.py:80
+#: newsapp/models.py:76 newsapp/models.py:86
 msgid "Description Android"
 msgstr ""
 
-#: newsapp/models.py:76
+#: newsapp/models.py:82
 msgid "Terms of Service"
 msgstr ""
 
-#: newsapp/models.py:77
+#: newsapp/models.py:83
 msgid "Terms of Services"
 msgstr ""
