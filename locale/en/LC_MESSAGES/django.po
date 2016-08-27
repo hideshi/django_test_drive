@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-27 19:10+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: django_test_drive/settings.py:163
+msgid "English"
+msgstr ""
+
+#: django_test_drive/settings.py:164
+msgid "Japanese"
+msgstr ""
+
+#: newsapp/models.py:13 newsapp/models.py:33
+msgid "Category"
+msgstr ""
+
+#: newsapp/models.py:14
+msgid "Categories"
+msgstr ""
+
+#: newsapp/models.py:16
+msgid "Name"
+msgstr ""
+
+#: newsapp/models.py:17 newsapp/models.py:49 newsapp/models.py:61
+#: newsapp/models.py:71 newsapp/models.py:81
+msgid "Created"
+msgstr ""
+
+#: newsapp/models.py:18 newsapp/models.py:50 newsapp/models.py:62
+#: newsapp/models.py:72 newsapp/models.py:82
+msgid "Modified"
+msgstr ""
+
+#: newsapp/models.py:22
+msgid "Article"
+msgstr ""
+
+#: newsapp/models.py:23
+msgid "Articles"
+msgstr ""
+
+#: newsapp/models.py:28 newsapp/models.py:57
+msgid "Title"
+msgstr ""
+
+#: newsapp/models.py:29
+msgid "Image"
+msgstr ""
+
+#: newsapp/models.py:31
+msgid "Content"
+msgstr ""
+
+#: newsapp/models.py:32
+msgid "Author"
+msgstr ""
+
+#: newsapp/models.py:37
+msgid "Draft"
+msgstr ""
+
+#: newsapp/models.py:38
+msgid "Public"
+msgstr ""
+
+#: newsapp/models.py:40 newsapp/models.py:59
+msgid "Status"
+msgstr ""
+
+#: newsapp/models.py:41 newsapp/models.py:60
+msgid "Open date"
+msgstr ""
+
+#: newsapp/models.py:45
+msgid "Yes"
+msgstr ""
+
+#: newsapp/models.py:46
+msgid "No"
+msgstr ""
+
+#: newsapp/models.py:48
+msgid "Notify"
+msgstr ""
+
+#: newsapp/models.py:54
+msgid "Notification"
+msgstr ""
+
+#: newsapp/models.py:55
+msgid "Notifications"
+msgstr ""
+
+#: newsapp/models.py:58
+msgid "Message"
+msgstr ""
+
+#: newsapp/models.py:66
+msgid "Help"
+msgstr ""
+
+#: newsapp/models.py:67
+msgid "Helps"
+msgstr ""
+
+#: newsapp/models.py:69 newsapp/models.py:79
+msgid "Description iOS"
+msgstr ""
+
+#: newsapp/models.py:70 newsapp/models.py:80
+msgid "Description Android"
+msgstr ""
+
+#: newsapp/models.py:76
+msgid "Terms of Service"
+msgstr ""
+
+#: newsapp/models.py:77
+msgid "Terms of Services"
+msgstr ""

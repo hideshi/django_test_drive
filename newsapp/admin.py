@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Article, Notification, Help, TermsOfService
+from django.utils.translation import gettext as _
+from .models import Article, Category, Notification, Help, TermsOfService
 
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
@@ -12,6 +13,10 @@ class ArticleAdmin(admin.ModelAdmin):
 
     search_fields = ['title', 'content']
     list_display = ('title', 'image_tag', 'status', 'open_date')
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name',)
 
 @admin.register(Notification)
 class NotificationAdmin(admin.ModelAdmin):

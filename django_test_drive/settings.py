@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #'material',
+    #'material.admin',
+    #'bootstrap_admin',
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -65,6 +69,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
+                'django.template.context_processors.tz',
             ],
         },
     },
@@ -126,6 +135,10 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+ADMIN_REORDER = (
+    {'app': 'newsapp', 'models': ('NewsappArticle', 'NewsappCategory', 'NewsappNotification', 'NewsappHelp', 'NewsappTermsOfService')},
+)
+
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
@@ -141,3 +154,13 @@ CKEDITOR_CONFIGS = {
 
 TEXT_ADDITIONAL_TAGS = ('iframe',)
 TEXT_ADDITIONAL_ATTRIBUTES = ('scrolling', 'allowfullscreen', 'frameborder', 'src', 'height', 'width')
+
+LOCALE_PATHS = ( os.path.join(BASE_DIR, "locale"), )
+LANGUAGE_CODE = 'ja'
+
+gettext = lambda s: s
+LANGUAGES = (
+    ('en', gettext('English')),
+    ('ja', gettext('Japanese')),
+)
+
