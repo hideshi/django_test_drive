@@ -164,3 +164,8 @@ LANGUAGES = (
     ('ja', gettext('Japanese')),
 )
 
+SUIT_CONFIG = {
+    'ADMIN_NAME': 'News App',
+    'SHOW_REQUIRED_ASTERISK': True,
+    'CONFIRM_UNSAVED_CHANGES': True,
+}

@@ -26,9 +26,9 @@ class Article(models.Model):
         return mark_safe('<img src="/media/{}" width="150" height="70" />'.format(self.image))
 
     title = models.CharField(_('Title'), max_length=255)
-    image = models.ImageField(_('Image'), upload_to='article/', default='article/default.png')
+    image = models.ImageField(_('Image'), null=True, upload_to='article/', default='article/default.png')
     image_tag.short_description = _('Image')
-    content = RichTextUploadingField(verbose_name=_('Content'))
+    content = RichTextUploadingField(verbose_name=_('Content'), null=True)
     author = models.ForeignKey(User, verbose_name=_('Author'))
     category = models.ForeignKey(Category, null=True, verbose_name=_('Category'))
     status_draft = 'draft'
