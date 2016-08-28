@@ -68,6 +68,11 @@ class Notification(models.Model):
     modified = models.DateTimeField(_('Modified'), auto_now=True)
 
 class Help(models.Model):
+    def __repr__(self):
+        return _('Help')
+
+    __str__ = __repr__
+
     class Meta:
         verbose_name = _('Help')
         verbose_name_plural = _('Helps')
@@ -78,6 +83,11 @@ class Help(models.Model):
     modified = models.DateTimeField(_('Modified'), auto_now=True)
 
 class TermsOfService(models.Model):
+    def __repr__(self):
+        return _('Terms of Service')
+
+    __str__ = __repr__
+
     class Meta:
         verbose_name = _('Terms of Service')
         verbose_name_plural = _('Terms of Services')
