@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from .models import Category, Article, Help, TermsOfService
 from .serializers import CategorySerializer, ArticleSerializer, AuthorSerializer, HelpSerializer, TermsOfServiceSerializer
-from rest_framework import viewsets
+from rest_framework import viewsets, filters
 
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -14,6 +14,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    pagination_class = None
 
 class ArticleViewSet(viewsets.ModelViewSet):
     """
@@ -21,6 +22,9 @@ class ArticleViewSet(viewsets.ModelViewSet):
     """
     queryset = Article.objects.all().order_by('-open_date')
     serializer_class = ArticleSerializer
+    filter_backends = (filters.DjangoFilterBackend,filters.SearchFilter,)
+    filter_fields = ('category_id',)
+    search_fields = ('title', 'content')
 
 class AuthorViewSet(viewsets.ModelViewSet):
     """
@@ -28,6 +32,7 @@ class AuthorViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = AuthorSerializer
+    pagination_class = None
 
 class HelpViewSet(viewsets.ModelViewSet):
     """
@@ -35,6 +40,7 @@ class HelpViewSet(viewsets.ModelViewSet):
     """
     queryset = Help.objects.all()
     serializer_class = HelpSerializer
+    pagination_class = None
 
 class TermsOfServiceViewSet(viewsets.ModelViewSet):
     """
@@ -42,4 +48,5 @@ class TermsOfServiceViewSet(viewsets.ModelViewSet):
     """
     queryset = TermsOfService.objects.all()
     serializer_class = TermsOfServiceSerializer
+    pagination_class = None
 

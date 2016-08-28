@@ -130,11 +130,11 @@ msgstr "ヘルプ"
 
 #: newsapp/models.py:75 newsapp/models.py:85
 msgid "Description iOS"
-msgstr "内容 iOS"
+msgstr "iOS用"
 
 #: newsapp/models.py:76 newsapp/models.py:86
 msgid "Description Android"
-msgstr "内容 Android"
+msgstr "Android用"
 
 #: newsapp/models.py:82
 msgid "Terms of Service"
