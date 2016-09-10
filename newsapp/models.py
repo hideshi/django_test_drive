@@ -77,6 +77,7 @@ class Help(models.Model):
         verbose_name = _('Help')
         verbose_name_plural = _('Helps')
 
+    name = models.CharField(_('Name'), default=_('Help'), max_length=10, editable=False)
     description_ios = RichTextField(_('Description iOS'))
     description_android = RichTextField(_('Description Android'))
     created = models.DateTimeField(_('Created'), auto_now_add=True)
@@ -92,6 +93,7 @@ class TermsOfService(models.Model):
         verbose_name = _('Terms of Service')
         verbose_name_plural = _('Terms of Services')
 
+    name = models.CharField(_('Name'), default=_('Terms of Service'), max_length=10, editable=False)
     description_ios = RichTextField(_('Description iOS'))
     description_android = RichTextField(_('Description Android'))
     created = models.DateTimeField(_('Created'), auto_now_add=True)

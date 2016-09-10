@@ -32,6 +32,8 @@ class HelpAdmin(admin.ModelAdmin):
         else:
             return True
 
+    list_display = ('name',)
+
 @admin.register(TermsOfService)
 class TermsOfServiceAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
@@ -40,3 +42,5 @@ class TermsOfServiceAdmin(admin.ModelAdmin):
             return False
         else:
             return True
+
+    list_display = ('name',)

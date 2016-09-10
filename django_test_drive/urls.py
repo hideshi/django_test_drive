@@ -17,13 +17,15 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from rest_framework.authtoken import views
+from rest_framework.authtoken import views as rest_views
 from newsapp.urls import router as newsapp
+from newsapp import views
 
 urlpatterns = [
+    url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
-    url(r'^api-auth/', views.obtain_auth_token),
+    url(r'^api-auth/', rest_views.obtain_auth_token),
     url(r'^api/', include(newsapp.urls)),
 ]
 

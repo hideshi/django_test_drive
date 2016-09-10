@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import get_object_or_404, render
 
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
@@ -9,6 +10,12 @@ from rest_framework import permissions
 
 from .models import Category, Article, Help, TermsOfService
 from .serializers import CategorySerializer, ArticleSerializer, AuthorSerializer, HelpSerializer, TermsOfServiceSerializer
+
+def index(request):
+    """
+    Landing page
+    """
+    return render(request, 'index.html', {})
 
 class CategoryViewSet(viewsets.ModelViewSet):
     """

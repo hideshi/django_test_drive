@@ -1,0 +1,7 @@
+Django
+django-ckeditor
+django-filter
+django-suit
+djangorestframework
+inflect
+Pillow

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 19:46+0800\n"
+"POT-Creation-Date: 2016-08-29 01:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: django_test_drive/settings.py:161
+#: django_test_drive/settings.py:158
 msgid "English"
 msgstr ""
 
-#: django_test_drive/settings.py:162
+#: django_test_drive/settings.py:159
 msgid "Japanese"
 msgstr ""
 
@@ -33,17 +33,17 @@ msgstr ""
 msgid "Categories"
 msgstr ""
 
-#: newsapp/models.py:16
+#: newsapp/models.py:16 newsapp/models.py:80 newsapp/models.py:96
 msgid "Name"
 msgstr ""
 
 #: newsapp/models.py:17 newsapp/models.py:49 newsapp/models.py:67
-#: newsapp/models.py:77 newsapp/models.py:87
+#: newsapp/models.py:83 newsapp/models.py:99
 msgid "Created"
 msgstr ""
 
 #: newsapp/models.py:18 newsapp/models.py:50 newsapp/models.py:68
-#: newsapp/models.py:78 newsapp/models.py:88
+#: newsapp/models.py:84 newsapp/models.py:100
 msgid "Modified"
 msgstr ""
 
@@ -119,26 +119,26 @@ msgstr ""
 msgid "Sent"
 msgstr ""
 
-#: newsapp/models.py:72
+#: newsapp/models.py:72 newsapp/models.py:77 newsapp/models.py:80
 msgid "Help"
 msgstr ""
 
-#: newsapp/models.py:73
+#: newsapp/models.py:78
 msgid "Helps"
 msgstr ""
 
-#: newsapp/models.py:75 newsapp/models.py:85
+#: newsapp/models.py:81 newsapp/models.py:97
 msgid "Description iOS"
 msgstr ""
 
-#: newsapp/models.py:76 newsapp/models.py:86
+#: newsapp/models.py:82 newsapp/models.py:98
 msgid "Description Android"
 msgstr ""
 
-#: newsapp/models.py:82
+#: newsapp/models.py:88 newsapp/models.py:93 newsapp/models.py:96
 msgid "Terms of Service"
 msgstr ""
 
-#: newsapp/models.py:83
+#: newsapp/models.py:94
 msgid "Terms of Services"
 msgstr ""
