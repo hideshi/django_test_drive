@@ -39,7 +39,7 @@ class AuthorViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows authors to be viewed.
     """
-    queryset = User.objects.all()
+    queryset = User.objects.all().filter(is_superuser=0, is_staff=1)
     serializer_class = AuthorSerializer
     pagination_class = None
 
