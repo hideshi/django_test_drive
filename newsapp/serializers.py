@@ -5,17 +5,17 @@ from rest_framework import serializers
 class CategorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Category
-        fields = ('name',)
+        fields = ('id', 'name',)
 
 class ArticleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Article
-        fields = ('title', 'content', 'author_id', 'category_id', 'status', 'open_date', 'created', 'modified')
+        fields = ('id', 'title', 'content', 'author_id', 'category_id', 'status', 'open_date', 'created', 'modified')
 
 class AuthorSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('first_name', 'last_name')
+        fields = ('id', 'first_name', 'last_name')
 
 class HelpSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
